@@ -4,7 +4,7 @@
 \usepackage[inline]{enumitem}
 % Package Geometry pour la gestion des marges
 % Marge aux 4 coins de la page, ici elles sont réduites pour gagner de la place
-\usepackage[top=1.0cm, bottom=1.0cm, left=1.6cm, right=1.6cm]{geometry}
+\usepackage[top=0.5cm, bottom=0.8cm, left=1.5cm, right=1.5cm]{geometry}
 % Largeur de la colonne de gauche pour les dates
 \setlength{\hintscolumnwidth}{2.7cm}
 \firstname{Benoît}
@@ -21,14 +21,17 @@
 \social[github]{bennychoubros}
 \mobile{06 63 24 86 67}
 \extrainfo{28 ans -- Permis B}
-\photo[80pt][0.4pt]{img/Portait.png}
+% 0.0pt in order to have no frame
+\photo[80pt][0.0pt]{img/Portait.png}
+% Negative margin to earn place between Top and Title if needed
+\vspace*{-1.5\baselineskip}
 % Designed to be a quote : I use it as a sub-title instead
 \quote{Développeur Open-source enthousiaste et sociable, motivé par des philosophies Agiles et
 DevOps.}
 \begin{document}
 \maketitle{}
 % Negative margin to earn place between Title and Experience if needed
-% \vspace*{-2.5\baselineskip}
+\vspace*{-2\baselineskip}
 \section{Expériences}
 \cventry{Avril 2018 å Novembre 2019}{Ingénieur Développement Logiciel}{UBLU}{Toulouse}{}{
 \begin{itemize}%
@@ -51,15 +54,13 @@ DevOps.}
 \cventry{2016 à Aujourd'hui}{Ecole 42}{Paris}{}{}{%
 - "Apprendre à coder en réecrivant UNIX"\newline{}%
 - C, C++, Bash, Python / Django, POSIX\newline{}%
-- Docker, Virtualbox\newline{}%
 - Notion réseau, Sécurité}
 \cventry{2009 - 2015}{E.I.Purpan}{Toulouse}{}{}{Spécialité en Management de la Distribution des Produits alimentaire}
 \cventry{2013}{Purdue University}{Indiana}{USA}{}{Semestre d’études en Collège d’Agriculture}
 \section{Certifications}
 \cventry{2017}{Digital Entrepreneurship Certificate}{HEC}{}{}{Master's Program créé par
 \textit{{\href{https://www.hec.edu/en/master-s-programs/certificates/digital-entrepreneurship-certificate}{HEC
-Paris}.}} 2 mois pour développer un projet de start-up. Formation axée sur l'entrepeneuriat, UX/UI,
-Web design et Marketing.}
+Paris}.}} 2 mois pour développer un projet de start-up.}
 \section{Compétences}
 \cvitem{Programmation}{Connaissances solides en C, Shell Script (Bash), Python.\newline{}%
 Opérationnel en C++, Python / Django, Shell Script (Bash), HTML, CSS.}
